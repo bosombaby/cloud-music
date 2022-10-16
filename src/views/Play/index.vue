@@ -61,7 +61,7 @@
       https://binaryify.github.io/NeteaseCloudMusicApi/#/?id=%e8%8e%b7%e5%8f%96%e9%9f%b3%e4%b9%90-url
      -->
     <audio
-      ref="audio"
+      ref="audioMusic"
       preload="true"
       :src="`https://music.163.com/song/media/outer/url?id=${id}.mp3`"
     ></audio>
@@ -125,16 +125,16 @@ export default {
     },
     audioStart() { // 播放按钮 - 点击事件
       if (!this.playState) { // 如果状态为false
-        this.$refs.audio.play() // 调用audio标签的内置方法play可以继续播放声音
+        this.$refs.audioMusic.play() // 调用audio标签的内置方法play可以继续播放声音
       } else {
-        this.$refs.audio.pause() // 暂停audio的播放
+        this.$refs.audioMusic.pause() // 暂停audio的播放
       }
       this.playState = !this.playState // 点击设置对立状态
     },
     showLyric() {
       // 监听播放audio进度, 切换歌词显示
-      this.$refs.audio.addEventListener('timeupdate', () => {
-        let curTime = Math.floor(this.$refs.audio.currentTime)
+      this.$refs.audioMusic.addEventListener('timeupdate', () => {
+        let curTime = Math.floor(this.$refs.audioMusic.currentTime)
         // 避免空白出现imageView
         if (this.lyric[curTime]) {
           this.curLyric = this.lyric[curTime]
