@@ -6,7 +6,7 @@
 
 ## 二、项目使用
 
-**github地址**：
+**github地址**：[cloud-music](https://github.com/bosombaby/cloud-music)
 
 **在线预览：**
 
