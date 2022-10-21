@@ -8,6 +8,6 @@ export const recommendMusicAPI = params => request({
 })
 //最新音乐
 export const newMusicAPI = params => request({
-    url: 'personalized/newsong',
+    url: '/personalized/newsong',
     params
 })
