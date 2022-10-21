@@ -3,5 +3,5 @@ import axios from "axios";
 
 export const request = axios.create({
     method:'GET',
-    baseURL:'http://https://api.vrteam.top'
+    baseURL:'https://api.vrteam.top'
 })
