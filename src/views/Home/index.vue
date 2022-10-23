@@ -1,5 +1,19 @@
 <template>
   <div>
+
+    <!-- 轮播图 -->
+    <p class="title">政治时事</p>
+    <van-swipe :autoplay="2000">
+      <van-swipe-item v-for="(image, index) in images" :key="index">
+        <img 
+          width="100%"
+          height="150px"
+          :src="image"
+           />
+      </van-swipe-item>
+    </van-swipe>
+
+
     <!-- 推荐歌单 -->
     <p class="title">推荐歌单</p>
     <div>
@@ -34,7 +48,16 @@ export default {
     data(){
       return {
         recommendList:[],
-        newList:[]
+        newList: [],
+        images: [
+          '/swiper/first.png',
+          '/swiper/second.png',
+          '/swiper/thrid.png',
+          '/swiper/fourth.png',
+
+          
+        ]
+        
       }
     },
     async created() {
@@ -49,17 +72,16 @@ export default {
 
 
     },
-    components:{SongItem}
+  components: { SongItem },
    
 }
 </script>
 
 <style scoped>
 .title {
-  padding: 0.266667rem 0.24rem;
-  margin: 0 0 0.24rem 0;
-  background-color: #eee;
-  color: #333;
+  padding: .2133rem 0.24rem;
+  background-color: #d43c33;
+  color: #fff;
   font-size: 15px;
 }
 /* 推荐歌单 - 歌名 */

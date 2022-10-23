@@ -3,7 +3,8 @@
     <!-- 顶部导航栏 -->
     <van-nav-bar 
        fixed
-      :title="activeTitle"
+       :title="activeTitle"
+       class="nav-title"
     />
     <!-- 中间内容展示 -->
     <div class="main">
@@ -38,11 +39,14 @@ export default {
 </script>
 
 <style scoped>
+.nav-title{
+  background: url('../../assets/bg.jpg') no-repeat center;
+}
 .bottom{
   padding: 15px 0;
 }
 .main{
-  padding-top: 48px;
+  padding-top: 45px;
   padding-bottom: 20px;
 }
 </style>
