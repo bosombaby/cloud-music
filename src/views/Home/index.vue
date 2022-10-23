@@ -12,8 +12,6 @@
            />
       </van-swipe-item>
     </van-swipe>
-
-
     <!-- 推荐歌单 -->
     <p class="title">推荐歌单</p>
     <div>
