@@ -9,7 +9,7 @@ import '@/mobile/flexible'
 import '@/styles/reset.css'
 
 //引入vant组件库
-import { NavBar,Tabbar, TabbarItem, Image as VanImage ,Cell, CellGroup, Icon,Search,Grid, GridItem,PullRefresh,List } from 'vant';
+import { NavBar,Tabbar, TabbarItem, Image as VanImage ,Cell, CellGroup, Icon,Search,Grid, GridItem,PullRefresh,List , Swipe, SwipeItem, Lazyload} from 'vant';
 Vue.use(NavBar);
 Vue.use(Tabbar);
 Vue.use(TabbarItem);
@@ -22,7 +22,9 @@ Vue.use(Grid);
 Vue.use(GridItem);
 Vue.use(PullRefresh);
 Vue.use(List);
-
+Vue.use(Swipe);
+Vue.use(SwipeItem);
+Vue.use(Lazyload);
 
 
 Vue.config.productionTip = false
