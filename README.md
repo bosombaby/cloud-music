@@ -2,13 +2,21 @@
 
 ## 一、基本介绍
 
-本项目使用`vue2+vue-cli`实现了一个简易的网易云音乐(App版本)，实现了歌曲的首页推荐展示，歌曲的搜索，评论的展示以及歌曲的播放四个主要功能模块，主要用来练手。
+本项目使用`vue2+vue-cli`实现了一个简易的网易云音乐(App版本)，实现了歌曲的首页推荐展示，歌曲的搜索，评论的展示以及歌曲的播放四个主要功能模块，主要用来练手，效果如下图所示：
+
+**首页**
+
+<img src="https://gitee.com/riskbaby/picgo/raw/master/blog/202210311558400.png" alt="1" style="zoom:50%;" />
+
+**搜索页面**
+
+
 
 ## 二、项目使用
 
 **github地址**：[cloud-music](https://github.com/bosombaby/cloud-music)
 
-**在线预览：**
+**在线预览：**：https://music.vrteam.top
 
 ## 三、开发环境
 
